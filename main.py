@@ -67,9 +67,32 @@ random_string = random_string + 1 # becomes 26
 print(random_string)
 
 surname = bool(surname) # if we don't have any characters inside quotes in a string variable
-                        # and converted it to a bool, the false value would be False
+                        # and converted it to a bool, the  value would be False
                         # used for checking whether users type something or not. and if not, we could do something with it
                         # e.g. ask users to type again since it's now valid
 print(surname)
 
+  # Input() function
 
+# favColor = input("What's your favorite color?: ")
+# age = input("What's your age?: ")
+# gender = input("Type your gender: ")
+# age = int(age) # typecasting (string -> int)
+# rabbits_num = int(input("How many rabbits do you have?: "))
+
+
+
+#print(f"{favColor} is a very good color!")
+#print(f"You are {age} years old!")
+#print(f"After 1 year you'll become {age + 1} years old!")
+#print(f"You have {rabbits_num} rabbits")
+
+#if gender == "boy":
+    #print("You are male!")
+#else:
+   # print("You are female!")
+
+length = int(input("Enter the length: "))
+width = int(input("Enter the width: "))
+result = length * width
+print(result)

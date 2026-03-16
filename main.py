@@ -117,3 +117,13 @@ if quantity == 1:
     print(f"You have bought {quantity} {item}")
     print(f"The total is: {summary}$")
 
+# madlibs game
+print("You're going to fill in the missing words in a story. Become a professional story-writer!")
+
+verb = input("Enter a verb (with ing): ") # assigning what user types (user's input) to a variable named "verb" so the value is stored in it
+noun = input("Enter a noun: ")
+money = float(input("Enter an amount of money: "))
+print(f"Yesterday I was {verb}  in the park when I suddenly realized that {noun} wasn't in my pocket")
+print(f"I had to make a plan to get out of such an unpleasant situation, so I decided to pay {money}$ to all of my family members")
+
+

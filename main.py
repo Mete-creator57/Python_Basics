@@ -126,4 +126,19 @@ money = float(input("Enter an amount of money: "))
 print(f"Yesterday I was {verb}  in the park when I suddenly realized that {noun} wasn't in my pocket")
 print(f"I had to make a plan to get out of such an unpleasant situation, so I decided to pay {money}$ to all of my family members")
 
+# Arithmetic / Math
 
+boxes = 5
+boxes += 1 # or boxes = boxes + 1
+boxes -= 2 # or boxes = boxes - 2 -> 6 - 2 = 4
+boxes *= 3 # or boxes = boxes * 3 which is 12
+boxes /= 4 # or boxes = boxes / 4 which is 12 / 4 = 3
+
+# Exponents
+boxes = boxes ** 3 # which is 3 * 3 * 3 = 27
+boxes = 3 # reassigning boxes number back to 3
+boxes **= 3 # augmented version
+
+
+
+print(boxes)

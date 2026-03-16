@@ -139,6 +139,11 @@ boxes = boxes ** 3 # which is 3 * 3 * 3 = 27
 boxes = 3 # reassigning boxes number back to 3
 boxes **= 3 # augmented version
 
-
+# Remainder
+number = 45
+number = number % 3 # no remainer
+number = 66
+number %= 5 # remainder is 1 (of division by 5)
+print(number)
 
 print(boxes)

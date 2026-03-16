@@ -92,7 +92,7 @@ print(surname)
 #else:
    # print("You are female!")
 
-length = int(input("Enter the length: "))
+length = int(input("Enter the length: "))  # converting what user types directly to int
 width = int(input("Enter the width: "))
-result = length * width
+result = length * width 
 print(result)

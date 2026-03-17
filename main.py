@@ -46,7 +46,7 @@ is_valid = True
 
 print(type(uncles)) # printing class a variable belongs to (<class 'int'>)
 
-decimal_num = int(decimal_num)
+decimal_num = int(decimal_num) # explicit conversion (data loss from float to int)
 print(f"Decimal number coverted to int -> {decimal_num}")
 
 uncles = float(uncles)
@@ -198,17 +198,58 @@ any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
 # print(pi_rounded) 
 
 # EXERCISES WITH MATH (Circle circumference and area)
-radius = float(input("Enter the radius of a circle: ")) # circumference of a circle
-circumference = 2 * math.pi * radius
-area = math.pi * pow(radius, 2) #raising radius to the power of 2 (area formula = PI * radius²)
-print("The results are rounded")
-print(f"The circumference is: {round(circumference, 3)}cm²")
-print(f"The area is: {area}cm² ")
+# radius = float(input("Enter the radius of a circle: ")) # circumference of a circle
+# circumference = 2 * math.pi * radius
+# area = math.pi * pow(radius, 2) #raising radius to the power of 2 (area formula = PI * radius²)
+# print("The results are rounded")
+# print(f"The circumference is: {round(circumference, 3)}cm²")
+# print(f"The area is: {area}cm² ")
 
 # Exercise Hypotenuse
-height = float(input("Enter the height of the triangle(side a): "))
-base = float(input("Enter the base of the triangle(side b): "))
+# height = float(input("Enter the height of the triangle(side a): "))
+# base = float(input("Enter the base of the triangle(side b): "))
 
-hypotenuse = math.sqrt(pow(height, 2) + pow(base, 2)) # raising both height and base to the power of 2 (square)
+# hypotenuse = math.sqrt(pow(height, 2) + pow(base, 2)) # raising both height and base to the power of 2 (square)
 
-print(f"The hypotenuse is: {round(hypotenuse, 3)}")
+# print(f"The hypotenuse is: {round(hypotenuse, 3)}")
+
+# IF statements
+money = float(input("Enter an amount of money you currently have(in USD): "))
+print(f"You have {round(money, 1)}$! ")
+
+if money >= 1000:
+    print(f"You can afford a gaming PC!")
+elif money < 0: # elif = else + if
+    print("You are out of money! You have some debt! ")
+elif money == 0:
+    print("You are poor!")
+else:
+    print("You have to have at least 1000$ for a gaming PC")
+    print(f"{round(money, 1)}$ is not sufficient for a gaming PC")
+
+some_Number = 47.5433243
+user_input = input(f"Do you want the programm round the number {some_Number} and truncate it(2 digits agter comma)?: ")
+
+if user_input == "":
+    print("You didn't type anything!")
+
+elif user_input == "no":
+    print(f"Okay then. The number remains {some_Number}")
+
+elif user_input == "yes":
+    round(some_Number, 2)
+    print(some_Number)
+    
+else:
+    print("What is that?")
+
+
+
+# IF statements with booleans
+signed_in = False
+if signed_in:
+    print("You are signed in!")
+   
+else:
+    print(f"You aren't signed in!")
+    

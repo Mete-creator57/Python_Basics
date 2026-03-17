@@ -1,4 +1,4 @@
-
+import math
 # this is my very first python programm
 
 # strings
@@ -93,38 +93,38 @@ print(surname)
    # print("You are female!")
 
 # Exercise 1: Triangle area
-length = float(input("Enter the length: "))  # converting what user types directly to int
-width = float(input("Enter the width: "))
-result = length * width 
-print(f"The area is: {result} cm") 
+# length = float(input("Enter the length: "))  # converting what user types directly to int
+# width = float(input("Enter the width: "))
+# result = length * width 
+# print(f"The area is: {result} cm") 
 
 #Exercise 2: Shopping Cart
-item = input("What item would you like to purchase?: ")
-quantity = int(input(f"How many {item}s would you like to purchase?: "))
-price = float(input(f"What's the price of 1 {item}?: "))
+# item = input("What item would you like to purchase?: ")
+# quantity = int(input(f"How many {item}s would you like to purchase?: "))
+# price = float(input(f"What's the price of 1 {item}?: "))
 
-summary = price * quantity
+# summary = price * quantity
 
-if quantity <= 0:
-    print(f"You haven't bought any {item}s")
-    print(f"The total is: {summary}$")
+# if quantity <= 0:
+  # print(f"You haven't bought any {item}s")
+    # print(f"The total is: {summary}$")
 
-if quantity > 1: 
-    print(f"You have bought {quantity} {item}s")
-    print(f"The total is: {summary}$")
+# if quantity > 1: 
+   # print(f"You have bought {quantity} {item}s")
+  #  print(f"The total is: {summary}$")
 
-if quantity == 1:
-    print(f"You have bought {quantity} {item}")
-    print(f"The total is: {summary}$")
+# if quantity == 1:
+    # print(f"You have bought {quantity} {item}")
+   # print(f"The total is: {summary}$")
 
 # madlibs game
-print("You're going to fill in the missing words in a story. Become a professional story-writer!")
+# print("You're going to fill in the missing words in a story. Become a professional story-writer!")
 
-verb = input("Enter a verb (with ing): ") # assigning what user types (user's input) to a variable named "verb" so the value is stored in it
-noun = input("Enter a noun: ")
-money = float(input("Enter an amount of money: "))
-print(f"Yesterday I was {verb}  in the park when I suddenly realized that {noun} wasn't in my pocket")
-print(f"I had to make a plan to get out of such an unpleasant situation, so I decided to pay {money}$ to all of my family members")
+# verb = input("Enter a verb (with ing): ") # assigning what user types (user's input) to a variable named "verb" so the value is stored in it
+# noun = input("Enter a noun: ")
+# money = float(input("Enter an amount of money: "))
+# print(f"Yesterday I was {verb}  in the park when I suddenly realized that {noun} wasn't in my pocket")
+# print(f"I had to make a plan to get out of such an unpleasant situation, so I decided to pay {money}$ to all of my family members")
 
 # Arithmetic / Math
 
@@ -144,6 +144,71 @@ number = 45
 number = number % 3 # no remainer
 number = 66
 number %= 5 # remainder is 1 (of division by 5)
-print(number)
+# print(number)
 
-print(boxes)
+# print(boxes)
+
+
+y = 67.5
+z = 47
+# Round 
+
+x = round(3.14) # rounds to the nearest integer
+result = round(y)
+# print(x) 
+
+# print(result)
+
+# Absolute Value
+
+smth = -47
+result_1 = abs(smth)
+# print(result_1)
+
+#Pow function
+
+number_1 = pow(3, 4)
+# print(number_1)
+
+# Max and Min Values (functions)
+
+max_num = max(1, 2, 3)
+min_num = min(1,  2, 3)
+# print(max_num)
+# print(min_num)
+
+# math library
+
+# print(math.pi)
+# print(math.e)
+pi_rounded = round(math.pi) # rounding pi to 3
+# Square Root
+some_num = math.sqrt(3)
+
+# Ceil and Floor Functions (round float numbers up or down)
+
+any_num = math.ceil(4.7) # rounds to 5 (UP to the nearest Whole Int Number)
+# print(any_num)
+any_num = round(4.7) # round function (rounds to the nearest WHOLE INT number)
+# print(any_num)
+any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
+# print(any_num_2)
+
+#print(some_num)
+# print(pi_rounded) 
+
+# EXERCISES WITH MATH (Circle circumference and area)
+radius = float(input("Enter the radius of a circle: ")) # circumference of a circle
+circumference = 2 * math.pi * radius
+area = math.pi * pow(radius, 2) #raising radius to the power of 2 (area formula = PI * radius²)
+print("The results are rounded")
+print(f"The circumference is: {round(circumference, 3)}cm²")
+print(f"The area is: {area}cm² ")
+
+# Exercise Hypotenuse
+height = float(input("Enter the height of the triangle(side a): "))
+base = float(input("Enter the base of the triangle(side b): "))
+
+hypotenuse = math.sqrt(pow(height, 2) + pow(base, 2)) # raising both height and base to the power of 2 (square)
+
+print(f"The hypotenuse is: {round(hypotenuse, 3)}")

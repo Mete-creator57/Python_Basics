@@ -92,7 +92,28 @@ print(surname)
 #else:
    # print("You are female!")
 
-length = int(input("Enter the length: "))  # converting what user types directly to int
-width = int(input("Enter the width: "))
+# Exercise 1: Triangle area
+length = float(input("Enter the length: "))  # converting what user types directly to int
+width = float(input("Enter the width: "))
 result = length * width 
-print(result)
+print(f"The area is: {result} cm") 
+
+#Exercise 2: Shopping Cart
+item = input("What item would you like to purchase?: ")
+quantity = int(input(f"How many {item}s would you like to purchase?: "))
+price = float(input(f"What's the price of 1 {item}?: "))
+
+summary = price * quantity
+
+if quantity <= 0:
+    print(f"You haven't bought any {item}s")
+    print(f"The total is: {summary}$")
+
+if quantity > 1: 
+    print(f"You have bought {quantity} {item}s")
+    print(f"The total is: {summary}$")
+
+if quantity == 1:
+    print(f"You have bought {quantity} {item}")
+    print(f"The total is: {summary}$")
+

@@ -288,19 +288,35 @@ any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
 
 # Python Weight Converter
 
-weight = float(input("Enter your weight: "))
-unit = input("K / L (K = KG, L = LBS): ")
+# weight = float(input("Enter your weight: "))
+# unit = input("K / L (K = KG, L = LBS): ")
 
-if unit == "K":
-    weight *= 2.205 # the same as weight = weight * 2.205
-    unit = "lbs"
-    print(f"Converting from kg to lbs...")
-    print(f"Your weight is: {round(weight)}{unit} ") #rounded result
-elif unit == "L":
-    weight /= 2.205
-    unit = "kg"
-    print(f"Converting from lbs to kg...")
-    print(f"Your weight is: {round(weight)}{unit} ") #rounded result
+# if unit == "K":
+   # weight *= 2.205 # the same as weight = weight * 2.205
+   # unit = "lbs"
+   # print(f"Converting from kg to lbs...")
+   # print(f"Your weight is: {round(weight)}{unit} ") #rounded result
+# elif unit == "L":
+    # weight /= 2.205
+    # unit = "kg"
+    # print(f"Converting from lbs to kg...")
+    # print(f"Your weight is: {round(weight)}{unit} ") #rounded result
+# else:
+    # print(f"{unit} is invalid measurement type. Try again")
+
+# Temperature Conversion
+temp = float(input("Enter the temperature: "))
+unit = input(f"Is {temp} in Celcius or Fahreheit? (C/F): ")
+
+if unit == "C":  # rounding
+    temp = round((9 * temp) / 5 + 32, 2) # formula to convert Celcius to Fahrenheit 
+    unit = "°F"
+    print(f"The temperature is {temp}{unit}")
+
+elif unit == "F":
+    temp = round((temp - 32) * 5 / 9, 2) # F -> C (round to 2 decimal places)
+    unit = "°C"
+    print(f"The temperature is {temp}{unit}")
+
 else:
-    print(f"{unit} is invalid measurement type. Try again")
-
+    print(f"The measurement unit: {unit} is invalid. Try again later.")

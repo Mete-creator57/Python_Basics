@@ -255,33 +255,52 @@ any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
     
 # Python Calculator
 
-operator = input("Enter an operator (+, -, *, /): ")
-num_1 = float(input("Enter a first number: "))
-num_2 = float(input("Enter a second number: "))
+# operator = input("Enter an operator (+, -, *, /): ")
+# num_1 = float(input("Enter a first number: "))
+# num_2 = float(input("Enter a second number: "))
 
-print("The result is going to be rounded")
+# print("The result is going to be rounded")
 
-if operator == " ":
-    print(f"Invalid operator: {operator} . Try again.")
-elif operator == "+":
-    result = num_1 + num_2
-    print(round(result, 3))
-    result = int(result)
-    print(f"Converted to int: {result}")
-elif operator == "-":
-    result = num_1 - num_2
-    print(round(result, 3))
-    result = int(result)
-    print(f"Converted to int: {result}")
-elif operator == "*":
-    result = num_1 * num_2
-    print(round(result, 3))
-    result = int(result)
-    print(f"Converted to int: {result}")
-elif operator == "/":
-    result = num_1 / num_2
-    print(round(result, 3))
-    result = int(result)
-    print(f"Converted to int: {result}")
+# if operator == " ":
+    # print(f"Invalid operator: {operator} . Try again.")
+# elif operator == "+":
+    # result = num_1 + num_2
+    # print(round(result, 3))
+    # result = int(result)
+   #  print(f"Converted to int: {result}")
+# elif operator == "-":
+    # result = num_1 - num_2
+    # print(round(result, 3))
+    # result = int(result)
+    # print(f"Converted to int: {result}")
+# elif operator == "*":
+   #  result = num_1 * num_2
+   #  print(round(result, 3))
+   #  result = int(result)
+   #  print(f"Converted to int: {result}")
+# elif operator == "/":
+   # result = num_1 / num_2
+  #  print(round(result, 3))
+   # result = int(result)
+   # print(f"Converted to int: {result}")
+# else:
+  #  print("You haven't typed anything! Try again later.")
+
+# Python Weight Converter
+
+weight = float(input("Enter your weight: "))
+unit = input("K / L (K = KG, L = LBS): ")
+
+if unit == "K":
+    weight *= 2.205 # the same as weight = weight * 2.205
+    unit = "lbs"
+    print(f"Converting from kg to lbs...")
+    print(f"Your weight is: {round(weight)}{unit} ") #rounded result
+elif unit == "L":
+    weight /= 2.205
+    unit = "kg"
+    print(f"Converting from lbs to kg...")
+    print(f"Your weight is: {round(weight)}{unit} ") #rounded result
 else:
-    print("You haven't typed anything! Try again later.")
+    print(f"{unit} is invalid measurement type. Try again")
+

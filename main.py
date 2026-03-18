@@ -305,18 +305,29 @@ any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
     # print(f"{unit} is invalid measurement type. Try again")
 
 # Temperature Conversion
-temp = float(input("Enter the temperature: "))
-unit = input(f"Is {temp} in Celcius or Fahreheit? (C/F): ")
+# temp = float(input("Enter the temperature: "))
+# unit = input(f"Is {temp} in Celcius or Fahreheit? (C/F): ")
 
-if unit == "C":  # rounding
-    temp = round((9 * temp) / 5 + 32, 2) # formula to convert Celcius to Fahrenheit 
-    unit = "°F"
-    print(f"The temperature is {temp}{unit}")
+# if unit == "C":  # rounding
+    # temp = round((9 * temp) / 5 + 32, 2) # formula to convert Celcius to Fahrenheit 
+   #  unit = "°F"
+   #  print(f"The temperature is {temp}{unit}")
 
-elif unit == "F":
-    temp = round((temp - 32) * 5 / 9, 2) # F -> C (round to 2 decimal places)
-    unit = "°C"
-    print(f"The temperature is {temp}{unit}")
+# elif unit == "F":
+    # temp = round((temp - 32) * 5 / 9, 2) # F -> C (round to 2 decimal places)
+    # unit = "°C"
+    # print(f"The temperature is {temp}{unit}")
 
-else:
-    print(f"The measurement unit: {unit} is invalid. Try again later.")
+# else:
+   #  print(f"The measurement unit: {unit} is invalid. Try again later.")
+
+   # Logical Operators
+ps_games = 5
+are_great = False
+
+if ps_games > 20 and are_great:
+    print(f"You have over {ps_games} games and the're cool!")
+elif ps_games > 45 or are_great:
+    print(f"You have great games!")
+elif ps_games < 10 and not are_great:
+    print("You have such a small number of games and the're bad!")

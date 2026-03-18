@@ -214,42 +214,74 @@ any_num_2 = math.floor(4.7) # rounds to 4 (DOWN to the nearest Whole Int number)
 # print(f"The hypotenuse is: {round(hypotenuse, 3)}")
 
 # IF statements
-money = float(input("Enter an amount of money you currently have(in USD): "))
-print(f"You have {round(money, 1)}$! ")
+# money = float(input("Enter an amount of money you currently have(in USD): "))
+# print(f"You have {round(money, 1)}$! ")
 
-if money >= 1000:
-    print(f"You can afford a gaming PC!")
-elif money < 0: # elif = else + if
-    print("You are out of money! You have some debt! ")
-elif money == 0:
-    print("You are poor!")
-else:
-    print("You have to have at least 1000$ for a gaming PC")
-    print(f"{round(money, 1)}$ is not sufficient for a gaming PC")
+# if money >= 1000:
+    # print(f"You can afford a gaming PC!")
+# elif money < 0: # elif = else + if
+   # print("You are out of money! You have some debt! ")
+# elif money == 0:
+   # print("You are poor!")
+# else:
+   #  print("You have to have at least 1000$ for a gaming PC")
+   #  print(f"{round(money, 1)}$ is not sufficient for a gaming PC")
 
-some_Number = 47.5433243
-user_input = input(f"Do you want the programm round the number {some_Number} and truncate it(2 digits agter comma)?: ")
+# some_Number = 47.5433243
+# user_input = input(f"Do you want the programm round the number {some_Number} and truncate it(2 digits agter comma)?: ")
 
-if user_input == "":
-    print("You didn't type anything!")
+# if user_input == "":
+   # print("You didn't type anything!")
 
-elif user_input == "no":
-    print(f"Okay then. The number remains {some_Number}")
+# elif user_input == "no":
+   # print(f"Okay then. The number remains {some_Number}")
 
-elif user_input == "yes":
-    round(some_Number, 2)
-    print(some_Number)
+# elif user_input == "yes":
+   #  round(some_Number, 2)
+   # print(some_Number)
     
-else:
-    print("What is that?")
+# else:
+   # print("What is that?")
 
 
 
 # IF statements with booleans
-signed_in = False
-if signed_in:
-    print("You are signed in!")
+# signed_in = False
+# if signed_in:
+   # print("You are signed in!")
    
-else:
-    print(f"You aren't signed in!")
+# else:
+   # print(f"You aren't signed in!")
     
+# Python Calculator
+
+operator = input("Enter an operator (+, -, *, /): ")
+num_1 = float(input("Enter a first number: "))
+num_2 = float(input("Enter a second number: "))
+
+print("The result is going to be rounded")
+
+if operator == " ":
+    print(f"Invalid operator: {operator} . Try again.")
+elif operator == "+":
+    result = num_1 + num_2
+    print(round(result, 3))
+    result = int(result)
+    print(f"Converted to int: {result}")
+elif operator == "-":
+    result = num_1 - num_2
+    print(round(result, 3))
+    result = int(result)
+    print(f"Converted to int: {result}")
+elif operator == "*":
+    result = num_1 * num_2
+    print(round(result, 3))
+    result = int(result)
+    print(f"Converted to int: {result}")
+elif operator == "/":
+    result = num_1 / num_2
+    print(round(result, 3))
+    result = int(result)
+    print(f"Converted to int: {result}")
+else:
+    print("You haven't typed anything! Try again later.")

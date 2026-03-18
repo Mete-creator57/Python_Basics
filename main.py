@@ -331,3 +331,16 @@ elif ps_games > 45 or are_great:
     print(f"You have great games!")
 elif ps_games < 10 and not are_great:
     print("You have such a small number of games and the're bad!")
+
+# Conditional Expressions (X if condition else Y) --> one-line shortcut, ternary operator
+age = 17
+is_allowed_to_drive = True
+check = is_allowed_to_drive if age >= 18 else False # if expression
+
+decision = "can drive" if age >= 18 else "can't drive" # returns and assigns a value based on the condition
+print(f"You {decision} since you're {age} years old")
+print(check)
+
+status = "Admin"
+access_check = "access given" if status == "Admin" else "access denied"
+print(access_check)

@@ -22,7 +22,7 @@ for num in range(1, 10, 2):
     print(num)
 
 print(f'Original: {ph_number}')
-# reversing a string
+# reversing a string using a step backwards (-1 means start from an end)
 ph_number = ph_number[::-1]
 print(f'Reversed: {ph_number}')
 
@@ -30,8 +30,16 @@ print(f'Reversed: {ph_number}')
 ph_number = '0536-632-5643'
 print(f'Original again: {ph_number}')
 
+# reversed() function is only for strings, only returns 
+# an object you can loop through. 
+# list() function here is used to turn this object into a list 
+# [3, 4, 6, 5....]
 print(f'Reversed string: {list(reversed(ph_number))}')
 
+# you can loop through it
 for ch in reversed(ph_number):
     print(ch)
+
+# '' is a divider between elements
+print(''.join(reversed(ph_number)))
 

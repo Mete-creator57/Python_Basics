@@ -10,7 +10,7 @@ while is_active:
     principal = input('Enter the amount you started with (principal): ')
     if principal.lower() == 'q':
         principal = 0
-        sys.exit()
+        sys.exit(0)
     
     
     try:

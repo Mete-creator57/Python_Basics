@@ -21,4 +21,10 @@ print(pc)
 
 apps = [{'youtube','youtube'}]
 print(apps)
+print(help(apps))
+print(dir(apps))
 
+# using divmod() func 
+# // and % at a time
+# returns a tuple (result of an int division, remainder)
+print(divmod(10, 2))
